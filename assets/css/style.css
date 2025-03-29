@@ -86,3 +86,41 @@ button:hover{
 button::before{
     content: " - ";
 }
+
+@media screen and (max-width: 1024px) {
+    .container__receitas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container__receitas {
+        grid-template-columns: 1fr;
+    }
+    
+    .receita {
+        padding: 20px;
+    }
+
+    #titulo__principal {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container__receitas {
+        gap: 15px;
+    }
+
+    .receita {
+        padding: 15px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 5px;
+    }
+}
